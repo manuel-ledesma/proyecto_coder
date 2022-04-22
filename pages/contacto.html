@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <div class="contacto__contenedor">
+
+        <header id="header">
+
+            <div class="header__logo">
+                <a href="#"><img class="logo" src="../images/favicon.png" alt="logo" title="logo"></a>
+            </div>
+            <div class="header__redes">
+                <div class="logoTamaño">
+                    <a href="https://www.instagram.com/?hl=es-la"><img class="logoChico" src="../images/insta-logo.svg" alt="logo instagram" title="logo instagram"></a>
+                </div>
+                <div class="logoTamaño">
+                    <a href="https://es-la.facebook.com/"><img class="logoChico" src="../images/face-logo.svg" alt="logo facebook" title="logo facebook"></a>
+                </div>
+                <div class="logoTamaño">
+                    <a href="https://ar.linkedin.com/"><img class="logoChico" src="../images/linkedin-logo.svg" alt="logo linkedin" title="logo linkedin"></a>
+                </div>
+            </div>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="sobre-mi.html">SOBRE MI</a>
+                    <ul>
+                        <li><a href="sobre-mi.html#quiensoy">Quien soy?</a></li>
+                        <li><a href="sobre-mi.html#inspiracion">Inspiración</a></li>
+                        <li><a href="sobre-mi.html#micv">Mi CV</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+
+        </nav>
+
+        <main class="contacto__main">
+
+            <form action="">
+                <legend>CONTACTO</legend>
+                <fieldset>
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre">
+                    <label for="telefono">TELEFONO</label>
+                    <input type="number" name="telefono">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email">
+                    <p>GENERO</p>
+                    <div class="contacto__genero">    
+                        <div class="contacto__radio"><p>F</p>
+                        <input type="radio" name="sexo" value="F"></div>
+                        <div class="contacto__radio"><p>M</p> 
+                        <input type="radio" name="sexo" value="M"></div>
+                        <div class="contacto__radio"><p>OTRO</p>
+                        <input type="radio" name="sexo" value="OTRO"></div>
+                    </div>
+                    <label for="disponibilidad">DISPONIBILIDAD</label>
+                    <select name="disponibilidad">
+                        <option value="maniana">MAÑANA</option>
+                        <option value="tarde">TARDE</option>
+                        <option value="noche">NOCHE</option>
+                    </select>
+                    <label for="mensaje">DEJE SU MENSAJE</label>
+                    <input class="contacto__mensaje" type="text" name="mensaje">
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPIAR">
+                </fieldset>
+            </form>
+
+        </main>
+
+        <footer>
+
+            <div class="footer__textos">
+                <a href="#">contactame</a>
+                <a href="#header">volver arriba</a> 
+                <p>Todos los derechos reservados</p>
+            </div>    
+            <div class="footer__logo">
+                <a href="#"><img class="logo" src="../images/favicon.png" alt="logo" title="logo"></a>
+            </div>
+            <p class="firma">Desarrollado por Manuel Ledesma</p>
+
+        </footer>>
+
+    </div>
+</body>
+</html>

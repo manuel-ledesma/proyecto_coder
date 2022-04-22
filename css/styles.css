@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: code-font;
+    src: url(../fonts/code-font/static/SourceCodePro-Regular.ttf);
+}
+
+body{
+    font-family: code-font;
+    background-image:radial-gradient(#0000FF,white );
+
+}
+
+/* aca arranca el header */
+
+header{
+    /* background-image: url(../images/IMG_4888.jpg); */
+    grid-area: header;
+    
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.header__redes{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: end; 
+    align-items: flex-start;
+    align-content:flex-start;
+}
+
+.logoTamaño{
+    width: 100px;
+    height: 100px;
+}
+
+.logoChico{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* aca arranca el nav */
+
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    list-style: none;
+}
+
+li{
+    position: relative;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
+ul ul{
+    position: absolute;
+    display: none;
+
+    border: 1px solid white;
+    background-color: #3EFF3F;
+}
+
+ul ul li{
+    display: block;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+li a{
+    color: #F2F3F4;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* aca arranca el index */
+
+.index__contenedor{
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer"
+}
+
+nav{
+    grid-area: nav;
+}
+
+.index__main{
+    grid-area: main;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index__titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    color: #3EFF3F;
+}
+
+.index__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    padding: 15px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.index__boton{
+    background-color: #3EFF3F;
+    color: white;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 10px;
+}
+
+/* aca arranca sobre mi */
+
+.sobremi__contenedor{
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+}
+
+.sobremi__main{
+    grid-area: main;
+}
+
+
+.sobremi__titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    color: white;
+    font-size: 35px;
+}
+
+.sobremi__subtitulos{
+    color: white;
+}
+
+#virgil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    border: solid white;
+    background-color: greenyellow;
+    padding: 5px;
+}
+
+.contenidoVirgil{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.articuloFrida{
+    margin-top: 30px;
+    border: solid white;
+    background-color: greenyellow;
+}
+
+.contenidoFrida{
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.imagenFrida{
+    height: 350px;
+    width: 300px;
+}
+
+.imagenChica{
+    height: 100%;
+    width: 100%;
+}
+
+.textoFrida{
+    margin-left: 15px;
+    width: 75%;
+    text-align: justify;
+}
+
+/* aca arranca el portfolio */
+
+.portfolio__contenedor{
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+}
+
+.portfolio__main{
+    grid-area: main;
+}
+
+.portfolio__titulo{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: solid;
+}
+
+table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    border: solid white;
+    background-color: greenyellow;
+    margin-left: 305px;
+    margin-right: 305px;
+}
+
+tr{
+    border: solid white;
+}
+
+td{
+    border: solid white;
+}
+
+/* aca arranca blog*/
+
+.blog__contenedor{
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+}
+
+.blog__main{
+    grid-area: main;
+}
+
+.blog__titulo{
+    color: white;
+    text-align: center;
+    text-decoration: solid;
+}
+
+.blog__section{
+    display: flex;
+    flex-direction: row;
+}
+
+iframe{
+    margin-left: 5px;
+}
+
+.blog__texto{
+    width: 70%;
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: white;
+}
+
+/* aca arranca el contacto */
+
+.contacto__contenedor{
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+}
+
+.contacto__main{
+    grid-area: main;
+
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.contacto__genero{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contacto__radio{
+    margin-right: 15px;
+}
+
+.contacto__mensaje{
+    height: 50px;
+}
+
+/* aca arranca el footer */
+
+footer{
+    grid-area: footer;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    background-color: black;
+    color: white;
+}
+
+.footer__textos{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer a{
+    color: white;
+}
+
+.footer__logo{
+    height: 100px;
+    width: 100px;
+}
+
+.firma{
+    display: flex;
+    align-items: flex-end;
+
+    font-style: italic;
+}
+
+
+/* aca arranca responsive */
+
+
+@media screen and (max-width: 360px){
+    
+    /* header mobile */
+
+    header{
+        display: grid;
+        grid-area: header;
+    } 
+
+    .header__logo{
+        justify-content: center;
+    }
+
+    .header__redes{
+        justify-content: center;
+    }
+
+    /* nav mobile */
+
+    ul{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+    }
+
+    /* index mobile */
+
+    .index__contenedor{
+        display: grid;
+        grid-template-areas: "header header"
+                             "header header"
+                             "nav main"
+                             "nav main"
+                             "footer footer";
+    }
+
+    .index__main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .index__card{
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        padding: 0px;
+        text-align: center;
+        width: 200px;
+        height: 500px;
+    }
+
+    /* sobremi mobile */
+
+    .sobremi__contenedor{
+        grid-template-areas: "header header"
+                             "header header"
+                             "nav main"
+                             "nav main"
+                             "footer footer";
+    }
+
+    .sobremi__subtitulos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenidoVirgil{
+        flex-direction: column;
+        justify-content: center;
+    
+        margin-top: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    #virgil{
+        width: 200px;
+    }
+
+    .articuloFrida{
+        width: 200px;
+
+    }
+    
+    .contenidoFrida{
+        flex-flow: column;
+    
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .imagenFrida{
+        height: 200px;
+        width: 180px;
+    }
+    
+    
+    .textoFrida{
+        margin-left: 0px;
+        width: 100%;
+        text-align: start;
+    }
+
+    /* portfolio mobile */
+
+    .portfolio__contenedor{
+        display: grid;
+        grid-template-areas: "header header"
+                             "nav main"
+                             "footer footer";
+    }
+    
+    
+    .portfolio__titulo{
+        font-size: 25px;
+        text-align: start;
+    }
+    
+    table{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    /* blog mobile */
+
+    .blog__contenedor{
+        display: grid;
+        grid-template-areas: "header header"
+                             "nav main"
+                             "footer footer";
+    }
+
+    .blog__main{
+        grid-area: main;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    
+    .blog__section{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    iframe{
+        margin-left: 0px;
+        width: 200px;
+        height: 150px;
+    }
+    
+    .blog__texto{
+        width: 200px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    /* contacto mobile */
+
+    .contacto__contenedor{
+        display: grid;
+        grid-template-areas: "header header"
+                             "nav main"
+                             "footer footer";
+    }
+    
+    .contacto__main{
+        grid-area: main;
+    }
+    
+    form{
+        width: 180px;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    /* footer mobile */
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__textos{
+        align-items: center;
+    }
+}
