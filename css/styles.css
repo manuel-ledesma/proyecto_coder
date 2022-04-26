@@ -10,7 +10,7 @@
 
 body{
     font-family: code-font;
-    background-image:radial-gradient(#0000FF,white );
+    background-color:rgb(235, 230, 206);
 
 }
 
@@ -24,6 +24,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    background-color: rgb(235, 230, 206);
 }
 
 .header__logo{
@@ -64,6 +66,10 @@ header{
 
 /* aca arranca el nav */
 
+nav{
+    background-image: linear-gradient(to right, rgb(235, 230, 206), rgb(207, 204, 204, 0.6), rgb(235, 230, 206)) ;
+}
+
 ul{
     display: flex;
     flex-flow: row nowrap;
@@ -75,10 +81,14 @@ ul{
 li{
     position: relative;
     font-size: 20px;
-    border: 1px solid white;
-    border-radius: 15px;
+    /* border: 1px solid white;
+    border-radius: 15px; */
     padding: 5px;
     margin: 10px;
+}
+
+li:hover {
+    font-style: italic;
 }
 
 ul ul{
@@ -86,7 +96,9 @@ ul ul{
     display: none;
 
     border: 1px solid white;
-    background-color: #3EFF3F;
+    background-color: rgb(207, 204, 204, 0.8);
+    /* border-radius: 15px; */
+    margin-top: 8px;
 }
 
 ul ul li{
@@ -103,6 +115,10 @@ li a{
 
 a{
     text-decoration: none;
+}
+
+ul li ul li:hover{
+    text-decoration: underline white;
 }
 
 
@@ -133,7 +149,20 @@ nav{
     flex-direction: row;
     justify-content: center;
 
-    color: #3EFF3F;
+    color: rgb(207, 204, 204);
+
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .index__card{
@@ -144,15 +173,22 @@ nav{
 
     background-color: white;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(207, 204, 204);
     padding: 15px;
     text-align: center;
     width: 400px;
     height: 400px;
+
+    transition: height 1s, width 1s;
+}
+
+.index__card:hover {
+    width: 420px;
+    height: 420px;
 }
 
 .index__boton{
-    background-color: #3EFF3F;
+    background-color: rgb(207, 204, 204, 0.4);
     color: white;
     border-radius: 15px;
     padding: 6px;
@@ -181,6 +217,19 @@ nav{
 
     color: white;
     font-size: 35px;
+
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .sobremi__subtitulos{
@@ -193,7 +242,7 @@ nav{
     align-items: flex-start;
     
     border: solid white;
-    background-color: greenyellow;
+    background-color:rgb(207, 204, 204, 0.6);
     padding: 5px;
 }
 
@@ -209,7 +258,7 @@ nav{
 .articuloFrida{
     margin-top: 30px;
     border: solid white;
-    background-color: greenyellow;
+    background-color:rgb(207, 204, 204, 0.6);
 }
 
 .contenidoFrida{
@@ -256,6 +305,19 @@ nav{
     font-size: 35px;
     text-align: center;
     text-decoration: solid;
+
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 table{
@@ -264,7 +326,7 @@ table{
     justify-content: center;
     
     border: solid white;
-    background-color: greenyellow;
+    background-color:rgb(207, 204, 204, 0.6);
     margin-left: 305px;
     margin-right: 305px;
 }
@@ -294,6 +356,19 @@ td{
     color: white;
     text-align: center;
     text-decoration: solid;
+
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .blog__section{
@@ -338,6 +413,7 @@ form{
     margin: 10px;
     padding: 10px;
     color: white;
+    background-color:rgb(207, 204, 204, 0.6);
 }
 
 fieldset{
@@ -370,7 +446,8 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     
-    background-color: black;
+    background-color: rgb(207, 204, 204);
+    background-image: linear-gradient(to right, rgb(207, 204, 204, 0.6), rgb(235, 230, 206), rgb(207, 204, 204, 0.6)) ;
     color: white;
 }
 
@@ -381,6 +458,10 @@ footer{
 
 footer a{
     color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer__logo{
