@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
     <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
@@ -55,31 +56,53 @@
             <form action="">
                 <legend>CONTACTO</legend>
                 <fieldset>
-                    <label for="nombre">NOMBRE</label>
-                    <input type="text" name="nombre">
-                    <label for="telefono">TELEFONO</label>
-                    <input type="number" name="telefono">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email">
-                    <p>GENERO</p>
-                    <div class="contacto__genero">    
-                        <div class="contacto__radio"><p>F</p>
-                        <input type="radio" name="sexo" value="F"></div>
-                        <div class="contacto__radio"><p>M</p> 
-                        <input type="radio" name="sexo" value="M"></div>
-                        <div class="contacto__radio"><p>OTRO</p>
-                        <input type="radio" name="sexo" value="OTRO"></div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">NOMBRE</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
                     </div>
-                    <label for="disponibilidad">DISPONIBILIDAD</label>
-                    <select name="disponibilidad">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">TELEFONO</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="11-1111-1111">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <p>GENERO</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        F
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        M
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        OTRO
+                        </label>
+                    </div>
+                    <select class="form-select">
+                        <option selected>DISPONIBILIDAD</option>
                         <option value="maniana">MAÑANA</option>
                         <option value="tarde">TARDE</option>
                         <option value="noche">NOCHE</option>
                     </select>
-                    <label for="mensaje">DEJE SU MENSAJE</label>
-                    <input class="contacto__mensaje" type="text" name="mensaje">
-                    <input type="submit" value="ENVIAR">
-                    <input type="reset" value="LIMPIAR">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">DEJE SU MENSAJE</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    <div class="col-12 boton">
+                        <button class="btn btn-primary" type="submit">ENVIAR</button>
+                    </div>
+                    <div class="col-12 boton">
+                        <button class="btn btn-primary" type="reset">LIMPIAR</button>
+                    </div>
                 </fieldset>
             </form>
 

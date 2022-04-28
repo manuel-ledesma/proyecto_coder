@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
 
     </head>
@@ -17,17 +18,17 @@
             <header id="header">
 
                 <div class="header__logo">
-                    <a href="#"><img class="logo" src="images/favicon.png" alt="logo" title="logo"></a>
+                    <a href="#"><img class="logo img-fluid" src="images/favicon.png" alt="logo" title="logo"></a>
                 </div>
                 <div class="header__redes">
                     <div class="logoTamaño">
-                        <a href="https://www.instagram.com/?hl=es-la"><img class="logoChico" src="images/insta-logo.svg" alt="logo instagram" title="logo instagram"></a>
+                        <a href="https://www.instagram.com/?hl=es-la"><img class="logoChico img-fluid" src="images/insta-logo.svg" alt="logo instagram" title="logo instagram"></a>
                     </div>
                     <div class="logoTamaño">
-                        <a href="https://es-la.facebook.com/"><img class="logoChico" src="images/face-logo.svg" alt="logo facebook" title="logo facebook"></a>
+                        <a href="https://es-la.facebook.com/"><img class="logoChico img-fluid" src="images/face-logo.svg" alt="logo facebook" title="logo facebook"></a>
                     </div>
                     <div class="logoTamaño">
-                        <a href="https://ar.linkedin.com/"><img class="logoChico" src="images/linkedin-logo.svg" alt="logo linkedin" title="logo linkedin"></a>
+                        <a href="https://ar.linkedin.com/"><img class="logoChico img-fluid" src="images/linkedin-logo.svg" alt="logo linkedin" title="logo linkedin"></a>
                     </div>
                 </div>
 
@@ -51,15 +52,18 @@
   
             </nav>
 
-            <main class="index__main">
+            <main class="index__main col-md-4 offset-4">
                 
                 <h1 class="index__titulo">NOMBRE MARCA</h1> 
-                <section class="index__card">    
-                    <h2>New content</h2>
-                    <a href="pages/sobre-mi.html#virgil"><img src="images/virgil.jpg" alt="imagen virgil abloh" title="imagen virgil abloh"></a> 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, beatae.</p>
-                    <button class="index__boton"><a href="pages/sobre-mi.html#virgil">...ver más</a></button>
-                </section>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/virgil.jpg" class="card-img-top" alt="imagen virgil abloh">
+                    <div class="card-body">
+                      <h5 class="card-title">New content</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="pages/sobre-mi.html#virgil" class="btn btn-primary">...ver más</a>
+                    </div>
+                </div>
+
 
             </main>
 
@@ -71,13 +75,15 @@
                     <p>Todos los derechos reservados</p>
                 </div>    
                 <div class="footer__logo">
-                    <a href="#"><img class="logo" src="images/favicon.png" alt="logo" title="logo"></a>
+                    <a href="#"><img class="logo img-fluid" src="images/favicon.png" alt="logo" title="logo"></a>
                 </div>
                 <p class="firma">Desarrollado por Manuel Ledesma</p>
 
             </footer>
 
         </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
     
 </html>

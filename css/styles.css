@@ -165,36 +165,6 @@ nav{
     }
 }
 
-.index__card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: white;
-    border-style: solid;
-    border-color: rgb(207, 204, 204);
-    padding: 15px;
-    text-align: center;
-    width: 400px;
-    height: 400px;
-
-    transition: height 1s, width 1s;
-}
-
-.index__card:hover {
-    width: 420px;
-    height: 420px;
-}
-
-.index__boton{
-    background-color: rgb(207, 204, 204, 0.4);
-    color: white;
-    border-radius: 15px;
-    padding: 6px;
-    margin: 10px;
-}
-
 /* aca arranca sobre mi */
 
 .sobremi__contenedor{
@@ -407,7 +377,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+     
 
     width: 50%;
     margin: 10px;
@@ -423,18 +393,16 @@ fieldset{
     width: 100%;
 }
 
-.contacto__genero{
+.form-select{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.boton{
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.contacto__radio{
-    margin-right: 15px;
-}
-
-.contacto__mensaje{
-    height: 50px;
+    justify-content: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 /* aca arranca el footer */
