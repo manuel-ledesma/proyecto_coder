@@ -206,55 +206,6 @@ nav{
     color: white;
 }
 
-#virgil{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    border: solid white;
-    background-color:rgb(207, 204, 204, 0.6);
-    padding: 5px;
-}
-
-.contenidoVirgil{
-    display: flex;
-    flex-direction: row;
-
-    margin-top: 10px;
-    margin-right: 10px;
-    padding: 5px;
-}
-
-.articuloFrida{
-    margin-top: 30px;
-    border: solid white;
-    background-color:rgb(207, 204, 204, 0.6);
-}
-
-.contenidoFrida{
-    display: flex;
-    flex-flow: row nowrap;
-
-    padding: 10px;
-    margin-top: 10px;
-}
-
-
-.imagenFrida{
-    height: 350px;
-    width: 300px;
-}
-
-.imagenChica{
-    height: 100%;
-    width: 100%;
-}
-
-.textoFrida{
-    margin-left: 15px;
-    width: 75%;
-    text-align: justify;
-}
 
 /* aca arranca el portfolio */
 
@@ -290,15 +241,9 @@ nav{
     }
 }
 
-table{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+table{    
     border: solid white;
     background-color:rgb(207, 204, 204, 0.6);
-    margin-left: 305px;
-    margin-right: 305px;
 }
 
 tr{
@@ -341,20 +286,10 @@ td{
     }
 }
 
-.blog__section{
-    display: flex;
-    flex-direction: row;
-}
-
 iframe{
-    margin-left: 5px;
-}
-
-.blog__texto{
-    width: 70%;
-    padding-left: 15px;
-    padding-top: 5px;
-    background-color: white;
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
 }
 
 /* aca arranca el contacto */
