@@ -1,78 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
+<head>
 
-        <title>Marca</title>
+    <title>Marca</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="images/favicon.png">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="index__contenedor">
+    <div class="index__contenedor">
 
-            <header id="header">   <!-- uso el id para que funcione el "volver arriba" del footer -->
+        <header id="header">   <!-- uso el id para que funcione el "volver arriba" del footer -->
 
-                <div class="header__logo">
-                    <a href="#"> <img class="logo img-fluid" src="images/favicon.png" alt="logo" title="logo"></a>
+            <div class="header__logo">
+                <a href="#"> <img class="logo img-fluid" src="images/favicon.png" alt="logo" title="logo"></a>
+            </div>
+
+            <div class="header__redes">
+                <div class="logoTamaño">
+                    <a href="https://www.instagram.com/?hl=es-la"><img class="logoChico img-fluid" src="images/insta-logo.svg" alt="logo instagram" title="logo instagram"></a>
                 </div>
-
-                <div class="header__redes">
-                    <div class="logoTamaño">
-                        <a href="https://www.instagram.com/?hl=es-la"><img class="logoChico img-fluid" src="images/insta-logo.svg" alt="logo instagram" title="logo instagram"></a>
+                <div class="logoTamaño">
+                    <a href="https://es-la.facebook.com/"><img class="logoChico img-fluid" src="images/face-logo.svg" alt="logo facebook" title="logo facebook"></a>
                     </div>
-                    <div class="logoTamaño">
-                        <a href="https://es-la.facebook.com/"><img class="logoChico img-fluid" src="images/face-logo.svg" alt="logo facebook" title="logo facebook"></a>
-                    </div>
-                    <div class="logoTamaño">
-                        <a href="https://ar.linkedin.com/"><img class="logoChico img-fluid" src="images/linkedin-logo.svg" alt="logo linkedin" title="logo linkedin"></a>
-                    </div>
+                <div class="logoTamaño">
+                    <a href="https://ar.linkedin.com/"><img class="logoChico img-fluid" src="images/linkedin-logo.svg" alt="logo linkedin" title="logo linkedin"></a>
                 </div>
+            </div>
 
-            </header>
+        </header>
 
-            <nav>
+        <nav>
                 
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="pages/sobre-mi.html">SOBRE MI</a>
                     <ul>
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="pages/sobre-mi.html">SOBRE MI</a>
-                            <ul>
-                                <li><a href="pages/sobre-mi.html#quiensoy">Quien soy?</a></li>
-                                <li><a href="pages/sobre-mi.html#inspiracion">Inspiración</a></li>
-                                <li><a href="pages/sobre-mi.html#micv">Mi CV</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="pages/portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="pages/blog.html">BLOG</a></li>
-                        <li><a href="pages/contacto.html">CONTACTO</a></li>
+                        <li><a href="pages/sobre-mi.html#quiensoy">Quien soy?</a></li>
+                        <li><a href="pages/sobre-mi.html#inspiracion">Inspiración</a></li>
+                        <li><a href="pages/sobre-mi.html#micv">Mi CV</a></li>
                     </ul>
+                </li>
+                <li><a href="pages/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="pages/blog.html">BLOG</a></li>
+                <li><a href="pages/contacto.html">CONTACTO</a></li>
+            </ul>
 
-            </nav> 
+        </nav> 
 
-            <main class="index__main">
+        <main class="index__main">
                 
-                <h1 class="index__titulo">NOMBRE MARCA</h1>
+            <h1 class="index__titulo">NOMBRE MARCA</h1>
 
-                <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                            <div class="card" style="width: 18rem;">
-                                <img src="images/virgil.jpg" class="card-img-top" alt="imagen virgil abloh">
-                                <div class="card-body">
-                                <h5 class="card-title">New content</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="pages/sobre-mi.html#virgil" class="btn btn-primary">...ver más</a>
-                            </div>
+            <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/virgil.jpg" class="card-img-top" alt="imagen virgil abloh">
+                            <div class="card-body">
+                            <h5 class="card-title">New content</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="pages/sobre-mi.html#virgil" class="btn btn-primary">...ver más</a>
                         </div>
-                      </div>
-                      <div class="carousel-item">
+                    </div>
+                </div>
+                    <div class="carousel-item">
                         <div class="card" style="width: 18rem;">
                             <img src="images/frida.png" class="card-img-top" alt="imagen frida khalo">
                             <div class="card-body">
@@ -82,35 +82,38 @@
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-            </main>
+        </main>
 
-            <footer>
+        <footer>
 
-                <div class="footer__textos">
-                    <a href="pages/contacto.html">contactame</a>
-                    <a href="#header">volver arriba</a> 
-                    <p>Todos los derechos reservados</p>
-                </div>    
-                <div class="footer__logo">
-                    <a href="#"><img class="logo img-fluid" src="images/favicon.png" alt="logo" title="logo"></a>
-                </div>
-                <p class="firma">Desarrollado por Manuel Ledesma</p>
+            <div class="footer__textos">
+                <a href="pages/contacto.html">contactame</a>
+                <a href="#header">volver arriba</a> 
+                <p>Todos los derechos reservados</p>
+            </div>
 
-            </footer>
+            <div class="footer__logo">
+                <a href="#"><img class="logo img-fluid" src="images/favicon.png" alt="logo" title="logo"></a>
+            </div>
 
-        </div>
+            <p class="firma">Desarrollado por Manuel Ledesma</p>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
-    </body>
+        </footer>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
     
 </html>

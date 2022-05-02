@@ -460,6 +460,7 @@ footer a:hover {
     }
 
 
+
     /* sobremi mobile */
 
     .sobremi__contenedor{
@@ -475,42 +476,11 @@ footer a:hover {
         justify-content: center;
     }
 
-    .contenidoVirgil{
-        flex-direction: column;
-        justify-content: center;
-    
-        margin-top: 0px;
-        margin-right: 0px;
-        padding: 0px;
+    .sobremi__main{
+        background-color: rgb(207, 204, 204, 0.6);
     }
 
-    #virgil{
-        width: 200px;
-    }
 
-    .articuloFrida{
-        width: 200px;
-
-    }
-    
-    .contenidoFrida{
-        flex-flow: column;
-    
-        padding: 5px;
-        margin-top: 10px;
-    }
-
-    .imagenFrida{
-        height: 200px;
-        width: 180px;
-    }
-    
-    
-    .textoFrida{
-        margin-left: 0px;
-        width: 100%;
-        text-align: start;
-    }
 
     /* portfolio mobile */
 
@@ -532,6 +502,8 @@ footer a:hover {
         margin-right: 0px;
     }
 
+
+
     /* blog mobile */
 
     .blog__contenedor{
@@ -547,12 +519,8 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-    }
 
-    
-    .blog__section{
-        flex-direction: column;
-        flex-wrap: wrap;
+        background-color: rgb(207, 204, 204, 0.6);
     }
     
     iframe{
@@ -560,12 +528,8 @@ footer a:hover {
         width: 200px;
         height: 150px;
     }
-    
-    .blog__texto{
-        width: 200px;
-        padding-left: 0px;
-        padding-top: 0px;
-    }
+
+
 
     /* contacto mobile */
 
