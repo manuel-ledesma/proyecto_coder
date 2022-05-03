@@ -67,60 +67,38 @@ header{
 
 /* aca arranca el nav */
 
-nav{
+/* nav{
     background-image: linear-gradient(to right, rgb(235, 230, 206), rgb(207, 204, 204, 0.6), rgb(235, 230, 206)) ;
-}
+}  no uso este porque no pude centrar el navbar*/
 
-ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+nav{
+    background-image: linear-gradient(to right, rgb(207, 204, 204, 0.6), rgb(235, 230, 206)) ;
+    }
 
-    list-style: none;
-}
-
-li{
-    position: relative;
-    font-size: 20px;
-    /* border: 1px solid white;
-    border-radius: 15px; */
-    padding: 5px;
-    margin: 10px;
+.nav-link{
+    color: white !important;
 }
 
 li:hover {
     font-style: italic;
 }
 
-ul ul{
-    position: absolute;
-    display: none;
-
-    border: 1px solid white;
-    background-color: rgb(207, 204, 204, 0.8);
-    /* border-radius: 15px; */
-    margin-top: 8px;
+.nav-link:hover {
+    color: black !important;
 }
 
-ul ul li{
-    display: block;
-}
-
-ul li:hover ul{
-    display: block;
-}
-
-li a{
+.dropdown-menu{
+    background-image: linear-gradient(to right, rgb(207, 204, 204, 0.6), rgb(235, 230, 206));
     color: white;
+    margin-top: 7px !important;
+    border: none;
 }
 
-a{
-    text-decoration: none;
+.dropdown-item:hover {
+    color: black !important;
+    background-color: rgb(207, 204, 204, 0.6);
 }
 
-ul li ul li:hover{
-    text-decoration: underline white;
-}
 
 
 /* aca arranca el index */
@@ -172,12 +150,17 @@ nav{
 
     background-color: rgb(207, 204, 204);
     border: rgb(207, 204, 204);
+    outline: none !important;
+    box-shadow:none !important;
 }
 
 .btn:hover {
     background-color: rgb(235, 230, 206);
 }
 
+.btn:visited {
+    background-color: rgb(207, 204, 204);
+}
 
 
 /* aca arranca sobre mi */
@@ -269,6 +252,10 @@ td{
     border: solid white;
 }
 
+tr:nth-child(2n){
+    background-color: rgb(207, 204, 204, 0.8);
+}
+
 /* aca arranca blog*/
 
 .blog__contenedor{
@@ -355,6 +342,25 @@ fieldset{
     margin-bottom: 3px;
 }
 
+.botonFondo{
+    background-color: rgb(235, 230, 206);
+}
+
+.form-check-input{
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: grey;
+    border-color: grey;
+}
+
+.form-check-input:active {
+    border-color: rgb(207, 204, 204) !important;
+}
+
+
+
 /* aca arranca el footer */
 
 footer{
@@ -379,7 +385,7 @@ footer a{
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: black;
 }
 
 .footer__logo{
@@ -392,6 +398,15 @@ footer a:hover {
     align-items: flex-end;
 
     font-style: italic;
+}
+
+.firma:hover {
+    color: black;
+    font-size: 20px;
+}
+
+.firma:active {
+    color: white;
 }
 
 
