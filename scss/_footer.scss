@@ -1,0 +1,46 @@
+footer{
+    grid-area: footer;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    background-image: linear-gradient(to right, rgb(207, 204, 204), rgb(235, 230, 206), rgb(207, 204, 204)) ;
+    color: white;
+
+    div{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: end;
+    }
+
+    a{
+        color: white;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+.firma{
+    display: flex;
+    align-items: flex-end;
+
+    font-style: italic;
+
+    &:hover {
+        color: black;
+        font-size: 20px;
+    }
+
+    &:active {
+        color: white;
+    }
+}

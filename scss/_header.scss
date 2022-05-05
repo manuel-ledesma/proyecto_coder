@@ -1,0 +1,40 @@
+header{
+    grid-area: header;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-size: cover;
+    background-color: rgb(235, 230, 206);
+
+    div{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+}
+
+// .header__logo{
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     align-items: center;
+
+//     width: 100px;
+//     height: 100px;
+// }
+
+// .header__redes{
+//     display: flex;
+//     flex-flow:row nowrap;
+//     justify-content: end; 
+//     align-content: center;
+// }

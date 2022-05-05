@@ -73,7 +73,7 @@ header{
 
 nav{
     background-image: linear-gradient(to right, rgb(207, 204, 204, 0.6), rgb(235, 230, 206)) ;
-    }
+}
 
 .nav-link{
     color: white !important;
@@ -370,7 +370,6 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     
-    background-color: rgb(207, 204, 204);
     background-image: linear-gradient(to right, rgb(207, 204, 204, 0.6), rgb(235, 230, 206), rgb(207, 204, 204, 0.6)) ;
     color: white;
 }
