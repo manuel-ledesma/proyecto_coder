@@ -5,7 +5,7 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
 
-    background-image: linear-gradient(to right, rgb(207, 204, 204), rgb(235, 230, 206), rgb(207, 204, 204)) ;
+    background-image: linear-gradient(to right, $gris, $beige, $gris) ;
     color: white;
 
     div{

@@ -6,7 +6,7 @@ header{
     justify-content: space-between;
 
     background-size: cover;
-    background-color: rgb(235, 230, 206);
+    background-color: $beige;
 
     div{
         display: flex;
@@ -20,21 +20,3 @@ header{
             height: 100px;
         }
 }
-
-// .header__logo{
-//     overflow: hidden;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     align-items: center;
-
-//     width: 100px;
-//     height: 100px;
-// }
-
-// .header__redes{
-//     display: flex;
-//     flex-flow:row nowrap;
-//     justify-content: end; 
-//     align-content: center;
-// }
