@@ -1,0 +1,28 @@
+.sobremi__contenedor{
+    
+    @include grid-template-areas;
+
+    main{
+        grid-area: main;
+
+        h1{
+            @extend .index__titulo;
+        }
+
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        h2{
+            color: white;
+        }
+
+    }
+
+
+                        }

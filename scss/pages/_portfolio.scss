@@ -1,0 +1,40 @@
+.portfolio__contenedor{
+    
+    @include grid-template-areas;
+
+    main{
+        grid-area: main;
+
+        h1{
+            @extend .index__titulo;
+        }
+
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+        table{    
+            border: solid white;
+            background-color:rgb(207, 204, 204);
+        
+            tr{
+                border: solid white;
+
+                td{
+                    border: solid white;
+                }
+            }
+
+            tr:nth-child(2n){
+                background-color: rgb(207, 204, 204);
+            }
+        }
+
+    }
+
+                        }

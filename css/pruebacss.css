@@ -1,3 +1,21 @@
+.index__titulo, .sobremi__contenedor main h1, .blog__contenedor main h1, .portfolio__contenedor main h1 {
+  color: white;
+  text-align: center;
+  text-decoration: solid;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-iteration-count: initial; }
+
+.boton--gris {
+  background-color: #cfcccc !important;
+  color: white;
+  text-align: center; }
+
+.boton--beige {
+  background-color: #ebe6ce !important;
+  color: white;
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -23,8 +41,8 @@ header {
     justify-content: space-between;
     align-content: center; }
   header img {
-    width: 100px;
-    height: 100px; }
+    height: 100px;
+    width: 100px; }
 
 nav {
   background-image: linear-gradient(to right, #cfcccc, #ebe6ce); }
@@ -53,18 +71,14 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    div main h1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      color: #cfcccc;
+    div main .index__titulo, div .sobremi__contenedor main h1, .sobremi__contenedor div main h1, div .blog__contenedor main h1, .blog__contenedor div main h1, div .portfolio__contenedor main h1, .portfolio__contenedor div main h1 {
+      color: white;
+      text-align: center;
+      text-decoration: solid;
       animation-name: aparecer;
       animation-duration: 3s;
       animation-iteration-count: initial; }
     div main a {
-      display: flex;
-      justify-content: center;
-      background-color: #cfcccc !important;
       border: #cfcccc !important;
       outline: none !important;
       box-shadow: none !important; }
@@ -78,6 +92,97 @@ div {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.sobremi__contenedor {
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  .sobremi__contenedor main {
+    grid-area: main; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .sobremi__contenedor main h2 {
+      color: white; }
+
+.blog__contenedor {
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  .blog__contenedor main {
+    grid-area: main; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .blog__contenedor main iframe {
+      width: 300px;
+      height: 200px;
+      margin-top: 50px; }
+
+.portfolio__contenedor {
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  .portfolio__contenedor main {
+    grid-area: main; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .portfolio__contenedor main table {
+      border: solid white;
+      background-color: #cfcccc; }
+      .portfolio__contenedor main table tr {
+        border: solid white; }
+        .portfolio__contenedor main table tr td {
+          border: solid white; }
+      .portfolio__contenedor main table tr:nth-child(2n) {
+        background-color: #cfcccc; }
+
+.contacto__contenedor {
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  .contacto__contenedor main {
+    grid-area: main;
+    display: flex;
+    justify-content: center; }
+    .contacto__contenedor main legend {
+      text-align: center; }
+    .contacto__contenedor main form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin: 10px;
+      padding: 10px;
+      color: white;
+      background-color: #cfcccc; }
+      .contacto__contenedor main form fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+      .contacto__contenedor main form .form-select {
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      .contacto__contenedor main form .boton {
+        display: flex;
+        justify-content: center;
+        margin-top: 3px;
+        margin-bottom: 3px; }
+      .contacto__contenedor main form .botonFondo {
+        background-color: #ebe6ce; }
+      .contacto__contenedor main form .form-check-input {
+        box-shadow: none !important; }
+      .contacto__contenedor main form .form-check-input:checked {
+        background-color: grey;
+        border-color: grey; }
+      .contacto__contenedor main form .form-check-input:active {
+        border-color: #cfcccc !important; }
 
 footer {
   grid-area: footer;

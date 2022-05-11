@@ -3,3 +3,47 @@
 $gris: #cfcccc;
 $beige: #ebe6ce;
 
+// mixin
+
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
+
+@mixin grid-template-areas{
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+}
+
+
+// extend
+
+.index__titulo{
+    color: white;
+    text-align: center;
+    text-decoration: solid;
+
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+// map
+
+$botones: (  
+    gris: $gris,
+    beige: $beige
+);
+
+@each $boton, $bgcolor in $botones{ 
+    .boton--#{$boton}{
+        background-color: $bgcolor !important;
+        color: white;
+
+        text-align: center;
+    }
+}
+

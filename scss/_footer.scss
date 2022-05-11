@@ -23,8 +23,7 @@ footer{
     }
 
     img{
-        height: 100px;
-        width: 100px;
+        @include sizes(100px, 100px)
     }
 
 }

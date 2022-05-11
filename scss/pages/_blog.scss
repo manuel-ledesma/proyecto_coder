@@ -1,0 +1,28 @@
+.blog__contenedor{
+
+    @include grid-template-areas;
+
+    main{
+        grid-area: main;
+
+        h1{
+            @extend .index__titulo;
+        }
+
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        iframe{
+            width: 300px;
+            height: 200px;
+            margin-top: 50px;
+        }
+    }
+
+                        }
