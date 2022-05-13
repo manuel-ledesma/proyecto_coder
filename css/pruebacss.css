@@ -1,4 +1,4 @@
-.index__titulo, .sobremi__contenedor main h1, .blog__contenedor main h1, .portfolio__contenedor main h1 {
+.index__titulo, .sobremi__contenedor main h1, .galeria__contenedor main h1, .portfolio__contenedor main h1 {
   color: white;
   text-align: center;
   text-decoration: solid;
@@ -71,7 +71,7 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    div main .index__titulo, div .sobremi__contenedor main h1, .sobremi__contenedor div main h1, div .blog__contenedor main h1, .blog__contenedor div main h1, div .portfolio__contenedor main h1, .portfolio__contenedor div main h1 {
+    div main .index__titulo, div .sobremi__contenedor main h1, .sobremi__contenedor div main h1, div .galeria__contenedor main h1, .galeria__contenedor div main h1, div .portfolio__contenedor main h1, .portfolio__contenedor div main h1 {
       color: white;
       text-align: center;
       text-decoration: solid;
@@ -107,10 +107,10 @@ div {
     .sobremi__contenedor main h2 {
       color: white; }
 
-.blog__contenedor {
+.galeria__contenedor {
   display: grid;
   grid-template-areas: "header" "nav" "main" "footer"; }
-  .blog__contenedor main {
+  .galeria__contenedor main {
     grid-area: main; }
 
 @keyframes aparecer {
@@ -118,10 +118,49 @@ div {
     opacity: 0; }
   100% {
     opacity: 1; } }
-    .blog__contenedor main iframe {
-      width: 300px;
-      height: 200px;
-      margin-top: 50px; }
+    .galeria__contenedor main section {
+      background-color: white; }
+    .galeria__contenedor main div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 10px; }
+      .galeria__contenedor main div .galeria__enterizo {
+        height: 480px;
+        width: 550px;
+        border-style: double;
+        border-radius: 10px; }
+      .galeria__contenedor main div .galeria__manos {
+        height: 400px;
+        width: 350px;
+        margin-top: 50px;
+        border-style: double;
+        border-radius: 10px; }
+      .galeria__contenedor main div .galeria__mangas {
+        height: 400px;
+        width: 700px;
+        margin-top: 55px;
+        border-style: double;
+        border-radius: 10px; }
+      .galeria__contenedor main div .galeria__vestido {
+        height: 500px;
+        width: 400px;
+        border-style: double;
+        border-radius: 10px; }
+      .galeria__contenedor main div .galeria__pollera {
+        height: 500px;
+        width: 400px;
+        border-style: double;
+        border-radius: 10px; }
+      .galeria__contenedor main div .galeria__campera {
+        height: 400px;
+        width: 520px;
+        margin-top: 55px;
+        border-style: double;
+        border-radius: 10px; }
+      .galeria__contenedor main div div img {
+        height: 100%;
+        width: 100%; }
 
 .portfolio__contenedor {
   display: grid;

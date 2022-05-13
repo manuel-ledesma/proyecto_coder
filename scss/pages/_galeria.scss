@@ -1,0 +1,99 @@
+.galeria__contenedor{
+
+    @include grid-template-areas;
+
+    main{
+        grid-area: main;
+
+        h1{
+            @extend .index__titulo;
+        }
+
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        section{
+            background-color: white;
+        }
+
+
+        div{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            margin: 10px;
+
+            .galeria__enterizo{
+                height: 480px;
+                width: 550px;
+
+                border-style: double;
+                border-radius: 10px;
+            }
+            
+            .galeria__manos{
+                height: 400px;
+                width: 350px;
+
+                margin-top: 50px;
+
+                border-style: double;
+                border-radius: 10px;
+            }
+
+            .galeria__mangas{
+                height: 400px;
+                width: 700px;
+
+                margin-top: 55px;
+
+                border-style: double;
+                border-radius: 10px;
+            }
+
+            .galeria__vestido{
+                height: 500px;
+                width: 400px;
+
+                border-style: double;
+                border-radius: 10px;
+            }
+
+            .galeria__pollera{
+                height: 500px;
+                width: 400px;
+
+                border-style: double;
+                border-radius: 10px;
+            }
+
+            .galeria__campera{
+                height: 400px;
+                width: 520px;
+
+                margin-top: 55px;
+
+                border-style: double;
+                border-radius: 10px;
+            }
+
+            div{
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+                        }
