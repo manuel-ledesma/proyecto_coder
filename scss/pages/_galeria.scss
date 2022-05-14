@@ -20,6 +20,9 @@
 
         section{
             background-color: white;
+
+            border-style: double;
+            border-radius: 15px;
         }
 
 
@@ -90,6 +93,11 @@
                 img{
                     height: 100%;
                     width: 100%;
+                }
+
+                &:active {
+                    height: 500px;
+                    width: 500px;
                 }
             }
         }

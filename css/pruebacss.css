@@ -26,7 +26,7 @@
 
 body {
   font-family: code-font;
-  background-color: #ebe6ce; }
+  background-color: white; }
 
 header {
   grid-area: header;
@@ -34,7 +34,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background-size: cover;
-  background-color: #ebe6ce; }
+  background-color: white; }
   header div {
     display: flex;
     flex-flow: row nowrap;
@@ -45,19 +45,18 @@ header {
     width: 100px; }
 
 nav {
-  background-image: linear-gradient(to right, #cfcccc, #ebe6ce); }
+  background-image: linear-gradient(to right, #dbdbfa, #dbdbfa); }
   nav ul li ul {
-    background-image: linear-gradient(to right, #cfcccc, #ebe6ce);
-    color: white;
+    background-image: linear-gradient(to right, #6500ff, #3eff3f);
+    background-color: #6500ff;
+    color: #3eff3f;
     margin-top: 7px !important;
     border: none; }
     nav ul li ul li:hover {
       color: black !important;
       background-color: #cfcccc !important; }
-  nav ul li:hover {
-    font-style: italic; }
   nav ul li a {
-    color: white !important; }
+    color: black !important; }
     nav ul li a:hover {
       color: black !important; }
 
@@ -119,7 +118,9 @@ div {
   100% {
     opacity: 1; } }
     .galeria__contenedor main section {
-      background-color: white; }
+      background-color: white;
+      border-style: double;
+      border-radius: 15px; }
     .galeria__contenedor main div {
       display: flex;
       flex-direction: row;
@@ -161,6 +162,9 @@ div {
       .galeria__contenedor main div div img {
         height: 100%;
         width: 100%; }
+      .galeria__contenedor main div div:active {
+        height: 500px;
+        width: 500px; }
 
 .portfolio__contenedor {
   display: grid;
@@ -228,7 +232,7 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #cfcccc, #ebe6ce, #cfcccc);
+  background-color: #dbdbfa;
   color: white; }
   footer div {
     display: flex;

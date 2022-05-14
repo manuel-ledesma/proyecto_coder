@@ -1,13 +1,15 @@
 nav{
-    background-image: linear-gradient(to right, $gris, $beige);
+    background-image: linear-gradient(to right, rgb(219, 219, 250), rgb(219, 219, 250));
+    // background-color: $azul !important;
 
     ul{
 
         li{
 
             ul{
-                background-image: linear-gradient(to right, $gris, $beige);
-                color: white;
+                background-image: linear-gradient(to right, $azul, $verde);
+                background-color: $azul;
+                color: $verde;
                 margin-top: 7px !important;
                 border: none;
 
@@ -17,11 +19,11 @@ nav{
                 }
             }
 
-            &:hover {
-                font-style: italic;
-            }
+            // &:hover {
+            //     font-style: italic;
+            // }
 
-            a{color: white !important;
+            a{color: black !important;
 
                 &:hover {color: black !important;
                 }
