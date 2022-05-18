@@ -3,7 +3,7 @@
 $gris: #cfcccc;
 $beige: #ebe6ce;
 $verde: rgb(62,255,63);
-$azul: rgb(101,0,255);
+$azul: #0000ff;
 
 // mixin
 
@@ -24,7 +24,7 @@ $azul: rgb(101,0,255);
 // extend
 
 .index__titulo{
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: solid;
 

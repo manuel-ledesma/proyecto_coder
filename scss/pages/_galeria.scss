@@ -35,8 +35,8 @@
             margin: 10px;
 
             .galeria__enterizo{
-                height: 480px;
-                width: 550px;
+                max-width: 480px;
+                max-width: 550px;
 
                 border-style: double;
                 border-radius: 10px;
@@ -105,3 +105,15 @@
     }
 
                         }
+
+@media screen and (max-width: 1000px){
+    .galeria__main{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

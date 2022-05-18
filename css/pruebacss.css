@@ -1,5 +1,5 @@
 .index__titulo, .sobremi__contenedor main h1, .galeria__contenedor main h1, .portfolio__contenedor main h1 {
-  color: white;
+  color: black;
   text-align: center;
   text-decoration: solid;
   animation-name: aparecer;
@@ -45,10 +45,10 @@ header {
     width: 100px; }
 
 nav {
-  background-image: linear-gradient(to right, #dbdbfa, #dbdbfa); }
+  background-image: linear-gradient(to right, #cfcccc, #ebe6ce); }
   nav ul li ul {
-    background-image: linear-gradient(to right, #6500ff, #3eff3f);
-    background-color: #6500ff;
+    background-image: linear-gradient(to right, #ebe6ce, white);
+    background-color: #0000ff;
     color: #3eff3f;
     margin-top: 7px !important;
     border: none; }
@@ -58,7 +58,7 @@ nav {
   nav ul li a {
     color: black !important; }
     nav ul li a:hover {
-      color: black !important; }
+      color: #3eff3f !important; }
 
 div {
   display: grid;
@@ -71,7 +71,7 @@ div {
     flex-direction: column;
     align-items: center; }
     div main .index__titulo, div .sobremi__contenedor main h1, .sobremi__contenedor div main h1, div .galeria__contenedor main h1, .galeria__contenedor div main h1, div .portfolio__contenedor main h1, .portfolio__contenedor div main h1 {
-      color: white;
+      color: black;
       text-align: center;
       text-decoration: solid;
       animation-name: aparecer;
@@ -92,19 +92,39 @@ div {
   100% {
     opacity: 1; } }
 
-.sobremi__contenedor {
+.sobremi__contenedor grid-template-areas {
   display: grid;
   grid-template-areas: "header" "nav" "main" "footer"; }
-  .sobremi__contenedor main {
-    grid-area: main; }
+
+.sobremi__contenedor main {
+  grid-area: main; }
+  .sobremi__contenedor main .presentacion__card {
+    border: none;
+    margin-left: 250px; }
+    .sobremi__contenedor main .presentacion__card .card-text {
+      font-size: x-large; }
+  .sobremi__contenedor main #presentacion {
+    margin-top: 40px; }
+  .sobremi__contenedor main .cardsVF {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .sobremi__contenedor main .cardsOD {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
 
 @keyframes aparecer {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-    .sobremi__contenedor main h2 {
-      color: white; }
+  .sobremi__contenedor main h2 {
+    color: #0000ff;
+    font-weight: bold; }
+  .sobremi__contenedor main h5 {
+    color: #0000ff;
+    font-style: italic; }
 
 .galeria__contenedor {
   display: grid;
@@ -127,8 +147,8 @@ div {
       justify-content: space-around;
       margin: 10px; }
       .galeria__contenedor main div .galeria__enterizo {
-        height: 480px;
-        width: 550px;
+        max-width: 480px;
+        max-width: 550px;
         border-style: double;
         border-radius: 10px; }
       .galeria__contenedor main div .galeria__manos {
@@ -166,6 +186,14 @@ div {
         height: 500px;
         width: 500px; }
 
+@media screen and (max-width: 1000px) {
+  .galeria__main {
+    display: flex;
+    flex-direction: column; }
+    .galeria__main div {
+      display: flex;
+      flex-direction: column; } }
+
 .portfolio__contenedor {
   display: grid;
   grid-template-areas: "header" "nav" "main" "footer"; }
@@ -179,7 +207,8 @@ div {
     opacity: 1; } }
     .portfolio__contenedor main table {
       border: solid white;
-      background-color: #cfcccc; }
+      background-color: #cfcccc;
+      max-width: 1000px; }
       .portfolio__contenedor main table tr {
         border: solid white; }
         .portfolio__contenedor main table tr td {
@@ -232,7 +261,7 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background-color: #dbdbfa;
+  background-image: linear-gradient(to right, #cfcccc, #ebe6ce, #cfcccc);
   color: white; }
   footer div {
     display: flex;

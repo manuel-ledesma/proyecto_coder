@@ -1,17 +1,17 @@
 nav{
-    background-image: linear-gradient(to right, rgb(219, 219, 250), rgb(219, 219, 250));
-    // background-color: $azul !important;
+    background-image: linear-gradient(to right, $gris, $beige);
+
 
     ul{
 
         li{
 
             ul{
-                background-image: linear-gradient(to right, $azul, $verde);
+                background-image: linear-gradient(to right, $beige, white);
                 background-color: $azul;
                 color: $verde;
                 margin-top: 7px !important;
-                border: none;
+                border: none;  
 
                 li:hover {
                     color: black !important;
@@ -19,13 +19,10 @@ nav{
                 }
             }
 
-            // &:hover {
-            //     font-style: italic;
-            // }
 
             a{color: black !important;
 
-                &:hover {color: black !important;
+                &:hover {color: $verde !important;
                 }
             }
 
@@ -34,4 +31,3 @@ nav{
 
 }
 
-// en mi proyecto sin sass mis fondos llevaban transparencia pero en sass no se puede usar el rgb con 4 numeros
