@@ -176,13 +176,11 @@ div {
       .galeria__contenedor main div .galeria__campera {
         height: 400px;
         width: 520px;
-        margin-top: 55px;
-        border-style: double;
-        border-radius: 10px; }
-      .galeria__contenedor main div div img {
+        margin-top: 55px; }
+      .galeria__contenedor main div img {
         height: 100%;
         width: 100%; }
-      .galeria__contenedor main div div:active {
+      .galeria__contenedor main div:active {
         height: 500px;
         width: 500px; }
 
